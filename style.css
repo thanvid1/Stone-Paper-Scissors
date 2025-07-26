@@ -1,0 +1,87 @@
+body {
+    background-color: rgba(252, 194, 124, 0.548);
+    /* background: linear-gradient(#e8935d,#9c5b419c 95%); */
+    color: rgba(42, 37, 37, 0.859);
+    text-align: center;
+    /* margin-top: 25%; */
+
+}
+h1{
+    height:5rem;
+    line-height: 6rem;
+    font-size: 3rem;
+    margin-top: 0%;
+}
+
+.choice{
+    height:150px;
+    width: 150px;
+    object-fit: cover;
+    border: true;
+    border-radius: 50%;
+    
+    background-color: rgba(112, 89, 155, 0.512);
+    font-size:80px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover{
+    cursor:pointer;
+    background-color: rgba(112, 89, 155, 0.512);
+    border: 6px solid rgba(0, 0, 0, 0.296);
+}
+
+.text:hover{
+    animation: shake 2s infinite;
+    -webkit-animation: shake 2s infinite;
+    opacity: 1;
+}
+
+@keyframes shake {
+    0%{ transform:rotate(0deg); -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); }
+    25%{ transform:rotate(15deg); -webkit-transform:rotate(15deg); -moz-transform:rotate(15deg); -ms-transform:rotate(15deg); -o-transform:rotate(15deg); }
+    50%{ transform:rotate(-10deg); -webkit-transform:rotate(-10deg); -moz-transform:rotate(-10deg); -ms-transform:rotate(-10deg); -o-transform:rotate(-10deg); }
+    75%{ transform:rotate(15deg); -webkit-transform:rotate(15deg); -moz-transform:rotate(15deg); -ms-transform:rotate(15deg); -o-transform:rotate(15deg); }
+    100%{ transform:rotate(0deg); -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); }
+}
+    
+
+.choices{
+    display:flex;
+    justify-content: center;
+    gap:1rem;
+    margin-top:5rem;
+}
+.score-board{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap:5rem;
+}
+
+#user-score,#cmp-score{
+    font-size:3rem;
+    margin-bottom:1rem;
+}
+
+
+#msg{
+    background-color: rgba(89, 53, 143, 0.604);
+    font-size: 23px;
+    display:inline;
+    padding:1rem;
+    border-radius: 10px;
+    border:1px solid rgba(0, 0, 0, 0.499);
+}
+
+.msg-container{
+    margin-top: 4rem;
+}
+
+#msg:hover{
+    opacity: 0.8;
+        }
